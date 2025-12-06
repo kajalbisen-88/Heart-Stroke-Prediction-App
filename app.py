@@ -5,7 +5,7 @@ import joblib
 import os
 
 # ---- Load Model & Files ----
-model = joblib.load("knn_heart.pkl")      # FIXED
+model = joblib.load("KNN_heart.pkl")      # FIXED
 scaler = joblib.load("scaler.pkl")
 expected_columns = joblib.load("columns.pkl")
 
@@ -61,4 +61,5 @@ if st.button("Predict"):
         st.error("The model predicts HIGH RISK of heart disease. Please consult a doctor.")
     else:
         st.success("The model predicts LOW RISK of heart disease. Stay healthy!")
+
 
